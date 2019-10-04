@@ -33,7 +33,7 @@
     <string name="pref_header_general">일반 설정</string>
     <string name="pref_title_general_autoconnectonbluetooth">블루투스가 켜지면 수호심 기기에 접속하기</string>
     <string name="pref_title_general_autoreconnect">자동으로 재연결</string>
-    <string name="pref_title_audio_player">선호하는 오디오 플레이어</string>
+    <!--^@^ --><string name="pref_title_audio_player">선호하는 오디오 플레이어</string>
     <string name="pref_default">기본값</string>
     <string name="pref_header_datetime">날짜와 시간</string>
     <string name="pref_title_datetime_syctimeonconnect">시간 동기화</string>
@@ -147,7 +147,7 @@
     <string name="user_feedback_miband_set_alarms_ok">알람을 기기로 보냈습니다.</string>
     <string name="chart_no_data_synchronize">데이터가 없습니다. 기기와 동기화할까요?</string>
     <string name="user_feedback_miband_activity_data_transfer">%2$s 에서부터 %1$s 데이터를 전송하려고 합니다</string>
-    <string name="miband_prefs_fitness_goal">일일 목표 걸음 수</string>
+    <!--^@^ --><string name="miband_prefs_fitness_goal">일일 목표 걸음 수</string>
     <string name="dbaccess_error_executing">\'%1$s\' 실행 오류</string>
     <string name="controlcenter_start_activitymonitor">당신의 활동 (초기 버전)</string>
     <string name="cannot_connect">접속할 수 없음: %1$s</string>
@@ -201,7 +201,7 @@
     <string name="miband_prefs_hr_sleep_detection">수면 측정을 향상시키기 위해 심박 센서 사용</string>
     <string name="waiting_for_reconnect">재접속을 기다리는 중</string>
     <string name="activity_prefs_about_you">당신에 대해</string>
-    <string name="activity_prefs_year_birth">출생년도</string>
+    <string name="activity_prefs_year_birth">생년월일(6자리)</string>
     <string name="activity_prefs_gender">성별</string>
     <string name="activity_prefs_height_cm">키 (cm)</string>
     <string name="activity_prefs_weight_kg">몸무게 (kg)</string>
@@ -209,7 +209,7 @@
     <string name="authentication_required">인증 필요</string>
     <string name="appwidget_text">Zzz</string>
     <string name="add_widget">위젯 추가</string>
-    <string name="activity_prefs_sleep_duration">선호하는 수면 시간</string>
+    <!--^@^ --><string name="activity_prefs_sleep_duration">선호하는 수면 시간</string>
     <string name="appwidget_setting_alarm">%1$02d:%2$02d 알람이 설정되었습니다</string>
     <string name="device_hw">하드웨어: %1$s</string>
     <string name="device_fw">펌웨어: %1$s</string>
@@ -244,12 +244,12 @@
     <string name="appmanager_weather_install_provider">날씨 알림 앱 설치</string>
     <string name="app_move_to_top">가장 위로 이동</string>
     <string name="title_activity_calblacklist">비활성화 된 캘린더들</string>
-    <string name="fw_upgrade_notice_amazfitbip">지금 당신의 Amazfit Bip에 %s 펌웨어를 설치하려고 합니다. 
-\n 
-\n.fw 파일을 설치하고 .res 파일을 설치한 후 최종적으로 .gps 파일을 설치하세요. .fw 파일을 설치한 후 기기가 재시작 됩니다. 
-\n 
-\n비고: 만약 전에 설치되어 있던 .res 파일과 .gps 파일을 그대로 사용한다면 각 파일을 다시 설치 할 필요는 없습니다. 
-\n 
+    <string name="fw_upgrade_notice_amazfitbip">지금 당신의 Amazfit Bip에 %s 펌웨어를 설치하려고 합니다.
+\n
+\n.fw 파일을 설치하고 .res 파일을 설치한 후 최종적으로 .gps 파일을 설치하세요. .fw 파일을 설치한 후 기기가 재시작 됩니다.
+\n
+\n비고: 만약 전에 설치되어 있던 .res 파일과 .gps 파일을 그대로 사용한다면 각 파일을 다시 설치 할 필요는 없습니다.
+\n
 \n본인의 책임 하에 진행하세요!</string>
     <string name="pref_title_general_autostartonboot">자동으로 시작</string>
     <string name="pref_title_language">언어</string>
@@ -308,12 +308,12 @@
     <string name="pref_title_unit_system">단위</string>
     <string name="pref_title_timeformat">시간 형식</string>
     <string name="controlcenter_connect">연결</string>
-    <string name="fw_upgrade_notice_amazfitcor">지금 당신의 Amazfit Cor에 %s 펌웨어를 설치하려고 합니다. 
-\n 
-\n.fw 파일을 설치하고 .res 파일을 설치한 후 최종적으로 .gps 파일을 설치하세요. .fw 파일을 설치한 후 기기가 재시작 됩니다. 
-\n 
-\n비고: 만약 전에 설치되어 있던 .res 파일과 .gps 파일을 그대로 사용한다면 각 파일을 다시 설치 할 필요는 없습니다. 
-\n 
+    <string name="fw_upgrade_notice_amazfitcor">지금 당신의 Amazfit Cor에 %s 펌웨어를 설치하려고 합니다.
+\n
+\n.fw 파일을 설치하고 .res 파일을 설치한 후 최종적으로 .gps 파일을 설치하세요. .fw 파일을 설치한 후 기기가 재시작 됩니다.
+\n
+\n비고: 만약 전에 설치되어 있던 .res 파일과 .gps 파일을 그대로 사용한다면 각 파일을 다시 설치 할 필요는 없습니다.
+\n
 \n본인의 책임 하에 진행하세요!</string>
     <string name="pref_title_charts_swipe">활동 차트에서 좌/우 밀어넘기기 사용</string>
     <string name="pref_title_weather_location">날씨 위치 (CM/리니지 OS)</string>
@@ -346,8 +346,8 @@
     <string name="stats_y_axis_label">분당 걸음 수</string>
     <string name="weeksleepchart_sleep_a_week">"주간 수면 시간 "</string>
     <string name="weeksleepchart_today_sleep_description">오늘의 수면, 목표 수면 시간: %1$s</string>
-    <string name="calories">칼로리</string>
-    <string name="distance">거리</string>
+    <!--^@^--><string name="calories">칼로리</string>
+    <!--^@^--><string name="distance">거리</string>
     <string name="clock">시계</string>
     <string name="heart_rate">심박수</string>
     <string name="battery">배터리</string>
@@ -394,8 +394,8 @@
     <string name="pref_summary_pebble_health_store_raw">이 기능을 사용할 경우 데이터는 가공되지 않은 상태로 저장되어, 추후 데이터 분석을 가능하게 하기 위해 데이터베이스에서 더 큰 용량을 차지합니다.</string>
     <string name="action_db_management">데이터베이스 관리</string>
     <string name="title_activity_db_management">데이터베이스 관리</string>
-    <string name="activity_db_management_import_export_explanation">데이터베이스 작업은 다음 경로를 사용합니다. 
-\n이 경로는 다른 컴퓨터 및 안드로이드 앱에서 접근 가능합니다. 
+    <string name="activity_db_management_import_export_explanation">데이터베이스 작업은 다음 경로를 사용합니다.
+\n이 경로는 다른 컴퓨터 및 안드로이드 앱에서 접근 가능합니다.
 \n내보낸 데이터베이스를 여기서 확인하세요 (혹은 가져올 데이터베이스를 여기에 저장하세요):</string>
     <string name="activity_db_management_merge_old_title">남겨진 데이터베이스 삭제</string>
     <string name="dbmanagementactivvity_cannot_access_export_path">내보낼 경로에 접근할 수 없습니다. 개발자에게 연락하세요.</string>
