@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelog>
-    <release version="0.36.2" versioncode="157">
-        <change>Amazfit Bip: Untested support for Lite variant </change>
-        <change>Force Lineage OS to ask for permission when Trust is used to fix non-working incoming calls</change>
-        <change>Charts: List multiple sleep sessions per day</change>
+    <release version="0.0.1" versioncode="1">
+        <change>수호심 0.0.1버전 입니다. </change>
+        <change>여러분의 건강과 행복한 생활을 기원합니다.</change>
+        <change>계속해서 업데이트 할 예정입니다.</change>
     </release>
+</changelog>
+<!--^@^
     <release version="0.36.1" versioncode="156">
         <change>Mi Band 2/3/4, Amazfit Bip/Cor: Add setting to expose the HR sensor to 3rd party apps</change>
         <change>Mi Band 4: Really fix weather location not being updated on the Band</change>
@@ -650,7 +652,7 @@
     <release version="0.13.4" versioncode="66">
         <change>Mi Band: Initial support for recording heart and displaying rate values</change>
         <change>Mi Band: Support for testing vibration patterns directly from the preferences</change>
-        <change>Mi Band: Clean up vibration preferences -- you may need to reconfigure some of them </change>
+        <change>Mi Band: Clean up vibration preferences - you may need to reconfigure some of them </change>
         <change>Possibly fix logging to file on certain devices)</change>
         <change>Mi Band 2: Possibly fix weird connection interdependency between Mi 1 and 2</change>
         <change>Mi Band 1S: Whitelist firmware 4.16.4.22</change>
@@ -823,3 +825,4 @@
         <change>Mi Band 1S: Support for reading the heart rate via the "Debug Screen"</change>
     </release>
 </changelog>
+-->
