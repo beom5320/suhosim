@@ -15,10 +15,8 @@
 
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>. */
-
-/* ^@^
-package nodomain.team3point1.suhosim.adapter;
-
+/*package nodomain.team3point1.suhosim.adapter;
+ ^@^
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;

@@ -124,17 +124,8 @@ public class SettingsActivity extends AbstractSettingsActivity {
                 return true;
             }
         });
-    /* ^@^
-        pref = findPreference("pref_key_blacklist");
-        pref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-            public boolean onPreferenceClick(Preference preference) {
-                Intent enableIntent = new Intent(SettingsActivity.this, AppBlacklistActivity.class);
-                startActivity(enableIntent);
-                return true;
-            }
-        });
-        ^@^
-     */
+
+
 
         pref = findPreference("pref_key_blacklist_calendars");
         pref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
@@ -373,11 +364,9 @@ public class SettingsActivity extends AbstractSettingsActivity {
         // Get all receivers of Media Buttons
         Intent mediaButtonIntent = new Intent(Intent.ACTION_MEDIA_BUTTON);
 
-        PackageManager pm = getPackageManager();
+      /*  PackageManager pm = getPackageManager();
         List<ResolveInfo> mediaReceivers = pm.queryBroadcastReceivers(mediaButtonIntent,
-                PackageManager.GET_INTENT_FILTERS | PackageManager.GET_RESOLVED_FILTER);
-
-
+               PackageManager.GET_INTENT_FILTERS | PackageManager.GET_RESOLVED_FILTER);
         CharSequence[] newEntries = new CharSequence[mediaReceivers.size() + 1];
         CharSequence[] newValues = new CharSequence[mediaReceivers.size() + 1];
         newEntries[0] = getString(R.string.pref_default);
@@ -393,7 +382,7 @@ public class SettingsActivity extends AbstractSettingsActivity {
         final ListPreference audioPlayer = (ListPreference) findPreference("audio_player");
         audioPlayer.setEntries(newEntries);
         audioPlayer.setEntryValues(newValues);
-        audioPlayer.setDefaultValue(newValues[0]);
+        audioPlayer.setDefaultValue(newValues[0]);*/
     }
 
     @Override
