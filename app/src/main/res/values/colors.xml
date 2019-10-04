@@ -9,7 +9,7 @@
     <color name="accent" type="color">#0091ea</color>
 
     <color name="primarytext_light" type="color">#000000</color>
-    <color name="primarytext_dark" type="color">#ffffff</color>
+    <color name="primarytext_dark" type="color">#FFFFFF</color>
 
     <color name="secondarytext" type="color">#ff808080</color>
     <color name="tertiarytext_light" type="color">#ffd0d0d0</color>
@@ -22,7 +22,7 @@
     <color name="chart_deep_sleep_light" type="color">#0071b7</color>
     <color name="chart_deep_sleep_dark" type="color">#4c5aff</color>
 
-    <color name="chart_light_sleep_light" type="color">#46acea</color>
+    <color name="chart_light_sleep_light" type="color">#46ACEA</color>
     <color name="chart_light_sleep_dark" type="color">#b6bfff</color>
 
     <color name="chart_activity_light" type="color">#60bd6d</color>

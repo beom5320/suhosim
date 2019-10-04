@@ -3,7 +3,7 @@
     android:id="@+id/alarm_list_top_layout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/primary_dark"
+    android:background="@color/chart_light_sleep_light"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -11,7 +11,7 @@
         android:id="@+id/todaywidget_header_container"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/accent"
+        android:background="#FFFFFF"
         android:baselineAligned="false"
         android:orientation="horizontal">
 
@@ -36,7 +36,7 @@
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:text="@string/widget_set_alarm_after"
-                android:textColor="@color/primarytext_dark"
+                android:textColor="@color/chart_light_sleep_light"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -62,6 +62,7 @@
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:text="@string/widget_5_minutes"
+            android:textColor="@color/primarytext_dark"
             android:textSize="30sp" />
 
         <TextView
@@ -70,6 +71,7 @@
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:text="@string/widget_10_minutes"
+            android:textColor="@color/primarytext_dark"
             android:textSize="30sp" />
 
         <TextView
@@ -78,6 +80,7 @@
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:text="@string/widget_20_minutes"
+            android:textColor="@color/primarytext_dark"
             android:textSize="30sp" />
 
         <TextView
@@ -86,6 +89,7 @@
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:text="@string/widget_1_hour"
+            android:textColor="@color/primarytext_dark"
             android:textSize="30sp" />
 
         <TextView
@@ -94,6 +98,7 @@
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:text="@string/miband_prefs_fitness_goal"
+            android:textColor="@color/primarytext_dark"
             android:textSize="30sp" />
     </LinearLayout>
 
