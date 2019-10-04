@@ -81,10 +81,11 @@
             android:name="nodomain.team3point1.suhosim.activities.appmanager.AppManagerActivity"
             android:label="@string/title_activity_appmanager"
             android:parentActivityName="nodomain.team3point1.suhosim.activities.ControlCenterv2" />
+        <!-- ^@^
         <activity
             android:name="nodomain.team3point1.suhosim.activities.AppBlacklistActivity"
             android:label="@string/title_activity_appblacklist"
-            android:parentActivityName="nodomain.team3point1.suhosim.activities.SettingsActivity" />
+            android:parentActivityName="nodomain.team3point1.suhosim.activities.SettingsActivity" />-->
         <activity
             android:name="nodomain.team3point1.suhosim.activities.CalBlacklistActivity"
             android:label="@string/title_activity_calblacklist"
