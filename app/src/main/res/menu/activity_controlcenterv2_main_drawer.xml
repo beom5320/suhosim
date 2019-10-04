@@ -7,7 +7,7 @@
         <item android:id="@+id/action_settings"
             android:title="@string/action_settings"
             android:icon="@drawable/ic_settings" />
-        <!-- <item android:id="@+id/action_debug"
+        <!--^@^ <item android:id="@+id/action_debug"
             android:title="@string/action_debug"
             android:icon="@drawable/ic_debug" />
         <item android:id="@+id/action_db_management"
@@ -15,7 +15,7 @@
             android:icon="@drawable/ic_database_management" />
         <item android:id="@+id/action_blacklist"
             android:title="@string/title_activity_appblacklist"
-            android:icon="@drawable/ic_block_black" /> -->
+            android:icon="@drawable/ic_block_black" /> ^@^-->
         <item android:id="@+id/device_action_discover"
             android:title="@string/action_discover"
             android:icon="@drawable/ic_add" />
@@ -24,7 +24,7 @@
             android:title="@string/action_quit"
             android:icon="@drawable/ic_quit" />
     </group>
-<!--
+<!--^@^
     <group
         android:checkableBehavior="single"
         android:id="@+id/further_options">
@@ -36,5 +36,5 @@
             android:id="@+id/external_changelog"
             android:title="@string/changelog_full_title"
             android:icon="@drawable/ic_history_black" />
-    </group> -->
+    </group> ^@^-->
 </menu>
