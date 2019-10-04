@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
     <string-array name="pref_theme_options">
         <item>@string/pref_theme_light</item>
         <item>@string/pref_theme_dark</item>
@@ -13,10 +17,12 @@
 
     <string-array name="pref_language_options">
         <item name="default">System Default</item>
+        <item name="ko">한국어</item>
+        <item name="en">English</item>
+        <!--^@^
         <item name="ca">Català</item>
         <item name="cs">Čeština</item>
         <item name="de">Deutsch</item>
-        <item name="en">English</item>
         <item name="es">Español</item>
         <item name="fr">Français</item>
         <item name="pl">Polski</item>
@@ -24,18 +30,20 @@
         <item name="vi">Tiếng Việt</item>
         <item name="tr">Türkçe</item>
         <item name="uk">Українська</item>
-        <item name="ko">한국어</item>
         <item name="ja">日本語</item>
         <item name="hu">Magyar</item>
         <item name="sk">Slovenčina</item>
+        ^@^-->
     </string-array>
 
     <string-array name="pref_language_values">
         <item>default</item>
+        <item>ko</item>
+        <item>en</item>
+        <!--^@^
         <item>ca</item>
         <item>cs</item>
         <item>de</item>
-        <item>en</item>
         <item>es</item>
         <item>fr</item>
         <item>pl</item>
@@ -43,10 +51,10 @@
         <item>vi</item>
         <item>tr</item>
         <item>uk</item>
-        <item>ko</item>
         <item>ja</item>
         <item>hu</item>
         <item>sk</item>
+        ^@^-->
     </string-array>
 
     <string-array name="notification_mode">
@@ -369,76 +377,87 @@
 
     <string-array name="pref_amazfitbip_language">
         <item name="auto">@string/automatic</item>
+        <item name="en_US">@string/english</item>
+        <!--^@^
         <item name="zh_CH">@string/simplified_chinese</item>
         <item name="zh_TW">@string/traditional_chinese</item>
-        <item name="en_US">@string/english</item>
         <item name="es_ES">@string/spanish</item>
         <item name="de_DE">@string/german</item>
         <item name="it_IT">@string/italian</item>
         <item name="fr_FR">@string/french</item>
         <item name="tr_TR">@string/turkish</item>
         <item name="ru_RU">@string/russian</item>
+        ^@^-->
     </string-array>
 
     <string-array name="pref_amazfitbip_language_values">
         <item>auto</item>
+        <item>en_US</item>
+        <!--^@^
         <item>zh_CH</item>
         <item>zh_TW</item>
-        <item>en_US</item>
         <item>es_ES</item>
         <item>de_DE</item>
         <item>it_IT</item>
         <item>fr_FR</item>
         <item>tr_TR</item>
         <item>ru_RU</item>
+        ^@^-->
     </string-array>
 
     <string-array name="pref_amazfitcor_language">
         <item name="auto">@string/automatic</item>
+        <item name="en_US">@string/english</item>
+        <!--^@^
         <item name="zh_CH">@string/simplified_chinese</item>
         <item name="zh_TW">@string/traditional_chinese</item>
-        <item name="en_US">@string/english</item>
         <item name="es_ES">@string/spanish</item>
         <item name="ru_RU">@string/russian</item>
+        ^@^-->
     </string-array>
 
     <string-array name="pref_amazfitcor_language_values">
         <item>auto</item>
+        <item>en_US</item>
+        <!--^@^
         <item>zh_CH</item>
         <item>zh_TW</item>
-        <item>en_US</item>
         <item>es_ES</item>
         <item>ru_RU</item>
+        -->
     </string-array>
-
+<!--^@^
     <string-array name="pref_miband3_language">
         <item name="auto">@string/automatic</item>
-        <item name="zh_CH">@string/simplified_chinese</item>
-        <item name="zh_TW">@string/traditional_chinese</item>
-        <item name="en_US">@string/english</item>
-        <item name="es_ES">@string/spanish</item>
-        <item name="de_DE">@string/german</item>
-        <item name="it_IT">@string/italian</item>
-        <item name="fr_FR">@string/french</item>
-        <item name="pt_PT">@string/portuguese</item>
-        <item name="nl_NL">@string/dutch</item>
-        <item name="pl_PL">@string/polish</item>
-        <item name="tr_TR">@string/turkish</item>
-        <item name="ru_RU">@string/russian</item>
-        <item name="uk_UA">@string/ukrainian</item>
-        <item name="ar_SA">@string/arabic</item>
-        <item name="id_ID">@string/indonesian</item>
-        <item name="th_TH">@string/thai</item>
-        <item name="vi_VN">@string/vietnamese</item>
-        <item name="ja_JP">@string/japanese</item>
         <item name="ko_KO">@string/korean</item>
+        <item name="en_US">@string/english</item>
+            <item name="zh_CH">@string/simplified_chinese</item>
+            <item name="zh_TW">@string/traditional_chinese</item>
+            <item name="es_ES">@string/spanish</item>
+            <item name="de_DE">@string/german</item>
+            <item name="it_IT">@string/italian</item>
+            <item name="fr_FR">@string/french</item>
+            <item name="pt_PT">@string/portuguese</item>
+            <item name="nl_NL">@string/dutch</item>
+            <item name="pl_PL">@string/polish</item>
+            <item name="tr_TR">@string/turkish</item>
+            <item name="ru_RU">@string/russian</item>
+            <item name="uk_UA">@string/ukrainian</item>
+            <item name="ar_SA">@string/arabic</item>
+            <item name="id_ID">@string/indonesian</item>
+            <item name="th_TH">@string/thai</item>
+            <item name="vi_VN">@string/vietnamese</item>
+            <item name="ja_JP">@string/japanese</item>
+            ^@^-->
     </string-array>
 
     <string-array name="pref_miband3_language_values">
         <item>auto</item>
+        <item>ko_KO</item>
+        <item>en_US</item>
+        <!--^@^
         <item>zh_CH</item>
         <item>zh_TW</item>
-        <item>en_US</item>
         <item>es_ES</item>
         <item>de_DE</item>
         <item>it_IT</item>
@@ -454,7 +473,7 @@
         <item>th_TH</item>
         <item>vi_VN</item>
         <item>ja_JP</item>
-        <item>ko_KO</item>
+        -->
     </string-array>
 
     <string-array name="prefs_heartrate_measurement_interval">
