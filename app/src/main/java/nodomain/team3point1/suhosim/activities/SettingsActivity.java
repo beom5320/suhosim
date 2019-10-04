@@ -124,7 +124,7 @@ public class SettingsActivity extends AbstractSettingsActivity {
                 return true;
             }
         });
-
+/*^@^
         pref = findPreference("pref_key_blacklist");
         pref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             public boolean onPreferenceClick(Preference preference) {
@@ -132,7 +132,7 @@ public class SettingsActivity extends AbstractSettingsActivity {
                 startActivity(enableIntent);
                 return true;
             }
-        });
+        });*/
 
         pref = findPreference("pref_key_blacklist_calendars");
         pref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
