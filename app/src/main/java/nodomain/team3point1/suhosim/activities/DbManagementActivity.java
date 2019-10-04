@@ -15,7 +15,7 @@
 
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>. */
-package nodomain.team3point1.suhosim.activities;
+/*^@^package nodomain.team3point1.suhosim.activities;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -64,7 +64,7 @@ public class DbManagementActivity extends AbstractGBActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_db_management);
+        setContentView(R.layout.test);
 
         TextView dbPath = findViewById(R.id.activity_db_management_path);
         dbPath.setText(getExternalPath());
@@ -331,3 +331,4 @@ public class DbManagementActivity extends AbstractGBActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+^@^*/
