@@ -15,6 +15,7 @@
 
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>. */
+/* ^@^
 package nodomain.team3point1.suhosim.activities;
 
 import android.os.Bundle;
@@ -89,3 +90,5 @@ public class AppBlacklistActivity extends AbstractGBActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+^@^
+ */

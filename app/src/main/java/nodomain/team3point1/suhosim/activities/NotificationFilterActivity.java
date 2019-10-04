@@ -36,7 +36,7 @@ import de.greenrobot.dao.query.Query;
 import nodomain.team3point1.suhosim.BuildConfig;
 import nodomain.team3point1.suhosim.GBApplication;
 import nodomain.team3point1.suhosim.R;
-import nodomain.team3point1.suhosim.adapter.AppBlacklistAdapter;
+//^@^import nodomain.team3point1.suhosim.adapter.AppBlacklistAdapter;
 import nodomain.team3point1.suhosim.database.DBHandler;
 import nodomain.team3point1.suhosim.entities.NotificationFilter;
 import nodomain.team3point1.suhosim.entities.NotificationFilterDao;
@@ -62,7 +62,7 @@ public class NotificationFilterActivity extends AbstractGBActivity {
 
     private static final Logger LOG = LoggerFactory.getLogger(NotificationFilterActivity.class);
 
-
+    /* ^@^
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,6 +107,8 @@ public class NotificationFilterActivity extends AbstractGBActivity {
         }
     }
 
+    ^@^
+     */
     @Override
     protected void onDestroy() {
         super.onDestroy();
