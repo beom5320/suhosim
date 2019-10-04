@@ -183,6 +183,7 @@ public class DaoSession extends AbstractDaoSession {
 
         notificationFilterEntryDaoConfig = daoConfigMap.get(NotificationFilterEntryDao.class).clone();
         notificationFilterEntryDaoConfig.initIdentityScope(type);
+
         baseActivitySummaryDaoConfig = daoConfigMap.get(BaseActivitySummaryDao.class).clone();
         baseActivitySummaryDaoConfig.initIdentityScope(type);
 
