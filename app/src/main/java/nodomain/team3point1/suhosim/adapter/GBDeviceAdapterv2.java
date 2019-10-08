@@ -513,7 +513,7 @@ public class GBDeviceAdapterv2 extends RecyclerView.Adapter<GBDeviceAdapterv2.Vi
             busyIndicator = view.findViewById(R.id.device_busy_indicator);
             takeScreenshotView = view.findViewById(R.id.device_action_take_screenshot);
             manageAppsView = view.findViewById(R.id.device_action_manage_apps);
-            setAlarmsView = view.findViewById(R.id.device_action_set_alarms);
+            //^@^setAlarmsView = view.findViewById(R.id.device_action_set_alarms);
             showActivityGraphs = view.findViewById(R.id.device_action_show_activity_graphs);
             showActivityTracks = view.findViewById(R.id.device_action_show_activity_tracks);
             deviceInfoView = view.findViewById(R.id.device_info_image);
