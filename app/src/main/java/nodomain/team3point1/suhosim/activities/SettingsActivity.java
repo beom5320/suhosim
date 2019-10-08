@@ -287,7 +287,7 @@ public class SettingsActivity extends AbstractSettingsActivity {
             }
         });
 
-        pref = findPreference("weather_city");
+        /* ^@^ pref = findPreference("weather_city");
         pref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
            @Override
            public boolean onPreferenceChange(Preference preference, Object newVal) {
@@ -299,7 +299,7 @@ public class SettingsActivity extends AbstractSettingsActivity {
                sendBroadcast(intent);
                return true;
            }
-        });
+        }); */
 
         pref = findPreference(GBPrefs.AUTO_EXPORT_LOCATION);
         pref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
