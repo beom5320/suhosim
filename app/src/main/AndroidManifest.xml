@@ -410,18 +410,11 @@
             android:name="nodomain.team3point1.suhosim.activities.charts.ChartsActivity"
             android:label="@string/title_activity_charts"
             android:parentActivityName="nodomain.team3point1.suhosim.activities.ControlCenterv2" />
-        <activity
-            android:name="nodomain.team3point1.suhosim.activities.ConfigureAlarms"
-            android:label="@string/title_activity_set_alarm"
-            android:parentActivityName="nodomain.team3point1.suhosim.activities.ControlCenterv2" />
+
         <activity
             android:name="nodomain.team3point1.suhosim.activities.devicesettings.DeviceSettingsActivity"
             android:label="@string/title_activity_device_specific_settings" />
-        <activity
-            android:name="nodomain.team3point1.suhosim.activities.AlarmDetails"
-            android:label="@string/title_activity_alarm_details"
-            android:parentActivityName="nodomain.team3point1.suhosim.activities.ConfigureAlarms"
-            android:screenOrientation="portrait" />
+
         <activity
             android:name="nodomain.team3point1.suhosim.activities.VibrationActivity"
             android:label="@string/title_activity_vibration"
@@ -450,17 +443,6 @@
                 android:resource="@xml/shared_paths" />
         </provider>
 
-        <receiver android:name="nodomain.team3point1.suhosim.SleepAlarmWidget"
-            android:label="@string/appwidget_sleep_alarm_widget_label">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="nodomain.freeyourgadget.gadgetbridge.SLEEP_ALARM_WIDGET_CLICK" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/sleep_alarm_widget_info" />
-        </receiver>
 
         <receiver
             android:name="nodomain.team3point1.suhosim.Widget"

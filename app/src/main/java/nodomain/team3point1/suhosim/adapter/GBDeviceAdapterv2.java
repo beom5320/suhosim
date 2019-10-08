@@ -52,7 +52,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import nodomain.team3point1.suhosim.GBApplication;
 import nodomain.team3point1.suhosim.R;
 import nodomain.team3point1.suhosim.activities.ActivitySummariesActivity;
-import nodomain.team3point1.suhosim.activities.ConfigureAlarms;
 import nodomain.team3point1.suhosim.activities.VibrationActivity;
 import nodomain.team3point1.suhosim.activities.charts.ChartsActivity;
 import nodomain.team3point1.suhosim.activities.devicesettings.DeviceSettingsActivity;
@@ -211,20 +210,7 @@ public class GBDeviceAdapterv2 extends RecyclerView.Adapter<GBDeviceAdapterv2.Vi
                                                  }
         );
 
-        //set alarms
-        holder.setAlarmsView.setVisibility(coordinator.getAlarmSlotCount() > 0 ? View.VISIBLE : View.GONE);
-        holder.setAlarmsView.setOnClickListener(new View.OnClickListener()
 
-                                                {
-                                                    @Override
-                                                    public void onClick(View v) {
-                                                        Intent startIntent;
-                                                        startIntent = new Intent(context, ConfigureAlarms.class);
-                                                        startIntent.putExtra(GBDevice.EXTRA_DEVICE, device);
-                                                        context.startActivity(startIntent);
-                                                    }
-                                                }
-        );
 
         //show graphs
         holder.showActivityGraphs.setVisibility(coordinator.supportsActivityTracking() ? View.VISIBLE : View.GONE);
