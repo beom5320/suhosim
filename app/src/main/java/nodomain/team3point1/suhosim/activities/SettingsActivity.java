@@ -64,7 +64,9 @@ import nodomain.team3point1.suhosim.util.GB;
 import nodomain.team3point1.suhosim.util.GBPrefs;
 import nodomain.team3point1.suhosim.util.Prefs;
 
+import static nodomain.team3point1.suhosim.model.ActivityUser.PREF_USER_BLOOD_TYPE;
 import static nodomain.team3point1.suhosim.model.ActivityUser.PREF_USER_HEIGHT_CM;
+import static nodomain.team3point1.suhosim.model.ActivityUser.PREF_USER_NAME2;
 import static nodomain.team3point1.suhosim.model.ActivityUser.PREF_USER_SLEEP_DURATION;
 import static nodomain.team3point1.suhosim.model.ActivityUser.PREF_USER_STEPS_GOAL;
 import static nodomain.team3point1.suhosim.model.ActivityUser.PREF_USER_WEIGHT_KG;
@@ -482,9 +484,11 @@ public class SettingsActivity extends AbstractSettingsActivity {
                 "canned_message_dismisscall_14",
                 "canned_message_dismisscall_15",
                 "canned_message_dismisscall_16",
+                PREF_USER_NAME2,
                 PREF_USER_YEAR_OF_BIRTH,
                 PREF_USER_HEIGHT_CM,
                 PREF_USER_WEIGHT_KG,
+                PREF_USER_BLOOD_TYPE,
                 PREF_USER_SLEEP_DURATION,
                 PREF_USER_STEPS_GOAL,
                 "weather_city",
