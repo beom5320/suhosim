@@ -18,10 +18,36 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/GadgetbridgeTheme.PopupOverlay" />
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/activity_controlcenterv2_content_main" />
+
+    <!-- 심박수 그래프를 추가했다 -->
+    <androidx.gridlayout.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:grid="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        android:layout_gravity="top"
+        android:layout_marginTop="250dp"
+        grid:columnCount="2">
+
+        <TextView
+            android:id="@+id/livechart_max_heart_rate"
+            grid:layout_columnSpan="2"
+            grid:layout_columnWeight="1" />
+        <TextView
+            android:id="@+id/livechart_"
+            grid:layout_columnSpan="2"
+            grid:layout_columnWeight="1" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/livechart_steps_per_minute_history"
+            grid:layout_columnSpan="2"
+            grid:layout_columnWeight="1"
+            grid:layout_rowWeight="1"></com.github.mikephil.charting.charts.LineChart>
+    </androidx.gridlayout.widget.GridLayout>
+    <!-- 여기까지 -->
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
