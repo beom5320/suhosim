@@ -34,7 +34,7 @@
     <string name="pref_header_general">일반 설정</string>
     <string name="pref_title_general_autoconnectonbluetooth">블루투스가 켜지면 수호심 기기에 접속하기</string>
     <string name="pref_title_general_autoreconnect">자동으로 재연결</string>
-    <!--^@^ --><string name="pref_title_audio_player">선호하는 오디오 플레이어</string>
+    <string name="pref_title_audio_player">선호하는 오디오 플레이어</string>
     <string name="pref_default">기본값</string>
     <string name="pref_header_datetime">날짜와 시간</string>
     <string name="pref_title_datetime_syctimeonconnect">시간 동기화</string>
@@ -202,8 +202,10 @@
     <string name="miband_prefs_hr_sleep_detection">수면 측정을 향상시키기 위해 심박 센서 사용</string>
     <string name="waiting_for_reconnect">재접속을 기다리는 중</string>
     <string name="activity_prefs_about_you">당신에 대해</string>
+    <string name="activity_prefs_name">이름</string>
     <string name="activity_prefs_year_birth">생년월일(6자리)</string>
     <string name="activity_prefs_gender">성별</string>
+    <string name="activity_prefs_blood_type">혈액형</string>
     <string name="activity_prefs_height_cm">키 (cm)</string>
     <string name="activity_prefs_weight_kg">몸무게 (kg)</string>
     <string name="authenticating">인증 중</string>

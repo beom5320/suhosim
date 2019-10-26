@@ -105,6 +105,12 @@
             android:title="@string/activity_prefs_about_you">
 
             <EditTextPreference
+                android:inputType="text"
+                android:key="activity_user_name"
+                android:maxLength="6"
+                android:title="@string/activity_prefs_name" />
+
+            <EditTextPreference
                 android:inputType="number"
                 android:key="activity_user_year_of_birth"
                 android:maxLength="6"
@@ -130,6 +136,14 @@
                 android:key="activity_user_weight_kg"
                 android:maxLength="3"
                 android:title="@string/activity_prefs_weight_kg" />
+
+            <ListPreference
+                android:defaultValue="8"
+                android:entries="@array/blood_type"
+                android:entryValues="@array/blood_type_values"
+                android:key="activity_user_blood_type"
+                android:summary="%s"
+                android:title="@string/activity_prefs_blood_type" />
             <!--^@^
             <EditTextPreference
                 android:defaultValue="10000"

@@ -88,6 +88,28 @@
         <item>0</item>
         <item>2</item>
     </string-array>
+    <string-array name="blood_type">
+        <item>기타</item>
+        <item>RH+ A</item>
+        <item>RH+ B</item>
+        <item>RH+ O</item>
+        <item>RH+ AB</item>
+        <item>RH- A</item>
+        <item>RH- B</item>
+        <item>RH- O</item>
+        <item>RH- AB</item>
+    </string-array>
+    <string-array name="blood_type_values">
+        <item>기타</item>
+        <item>RH+ A</item>
+        <item>RH+ B</item>
+        <item>RH+ O</item>
+        <item>RH+ AB</item>
+        <item>RH- A</item>
+        <item>RH- B</item>
+        <item>RH- O</item>
+        <item>RH- AB</item>
+    </string-array>
     <string-array name="wearside">
         <item>@string/left</item>
         <item>@string/right</item>

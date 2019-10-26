@@ -34,8 +34,12 @@ public class ActivityUser {
     public static final int GENDER_MALE = 1;
     public static final int GENDER_OTHER = 2;
 
+    public static final int BLOOD_TYPE_OTHER = 0;
+
     private String activityUserName;
+    private String activityUserName2;
     private int activityUserGender;
+    private int activityUserBloodType;
     private int activityUserYearOfBirth;
     private int activityUserHeightCm;
     private int activityUserWeightKg;
@@ -46,7 +50,9 @@ public class ActivityUser {
     private int activityUserActiveTimeMinutes;
 
     private static final String defaultUserName = "suhosim-user";
+    public static final String defaultUserName2 = "?";
     public static final int defaultUserGender = GENDER_FEMALE;
+    public static final int defaultUserBloodType = BLOOD_TYPE_OTHER;
     public static final int defaultUserYearOfBirth = 0;
     public static final int defaultUserAge = 0;
     public static final int defaultUserHeightCm = 175;
@@ -58,10 +64,12 @@ public class ActivityUser {
     public static final int defaultUserActiveTimeMinutes = 60;
 
     public static final String PREF_USER_NAME = "mi_user_alias";
+    public static final String PREF_USER_NAME2 = "activity_user_name";
     public static final String PREF_USER_YEAR_OF_BIRTH = "activity_user_year_of_birth";
     public static final String PREF_USER_GENDER = "activity_user_gender";
     public static final String PREF_USER_HEIGHT_CM = "activity_user_height_cm";
     public static final String PREF_USER_WEIGHT_KG = "activity_user_weight_kg";
+    public static final String PREF_USER_BLOOD_TYPE = "activity_user_blood_type";
     public static final String PREF_USER_SLEEP_DURATION = "activity_user_sleep_duration";
     public static final String PREF_USER_STEPS_GOAL = "mi_fitness_goal"; // FIXME: for compatibility
     public static final String PREF_USER_CALORIES_BURNT = "activity_user_calories_burnt";
@@ -76,6 +84,10 @@ public class ActivityUser {
         return activityUserName;
     }
 
+    public String getName2() {
+        return activityUserName2;
+    }
+
     public int getWeightKg() {
         return activityUserWeightKg;
     }
@@ -87,6 +99,10 @@ public class ActivityUser {
      */
     public int getGender() {
         return activityUserGender;
+    }
+
+    public int getBloodType() {
+        return activityUserBloodType;
     }
 
     public int getYearOfBirth() {
@@ -130,7 +146,9 @@ public class ActivityUser {
     private void fetchPreferences() {
         Prefs prefs = GBApplication.getPrefs();
         activityUserName = prefs.getString(PREF_USER_NAME, defaultUserName);
+        activityUserName2 = prefs.getString(PREF_USER_NAME2, defaultUserName2);
         activityUserGender = prefs.getInt(PREF_USER_GENDER, defaultUserGender);
+        activityUserBloodType = prefs.getInt(PREF_USER_BLOOD_TYPE, defaultUserBloodType);
         activityUserHeightCm = prefs.getInt(PREF_USER_HEIGHT_CM, defaultUserHeightCm);
         activityUserWeightKg = prefs.getInt(PREF_USER_WEIGHT_KG, defaultUserWeightKg);
         activityUserYearOfBirth = prefs.getInt(PREF_USER_YEAR_OF_BIRTH, defaultUserYearOfBirth);

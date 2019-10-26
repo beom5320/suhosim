@@ -22,7 +22,7 @@ import nodomain.team3point1.suhosim.util.Prefs;
 
 public class HeartRateUtils {
     public static final int MAX_HEART_RATE_VALUE = 250;
-    public static final int MIN_HEART_RATE_VALUE = 10;
+    public static final int MIN_HEART_RATE_VALUE = 30;
 
     /**
      * The maxiumum gap between two hr measurements in which
