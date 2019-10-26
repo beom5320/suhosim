@@ -22,6 +22,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Paint;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,6 +30,8 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.telephony.SmsManager;
+
 
 import com.github.mikephil.charting.charts.BarLineChartBase;
 import com.github.mikephil.charting.charts.Chart;
@@ -87,7 +90,10 @@ public class LiveActivityFragment extends AbstractChartFragment {
     private int maxStepsResetCounter;
     private LineDataSet mHeartRateSet;
     private int mHeartRate;
+    private int WarningCount = 0;
     private int mMaxHeartRate = 0;
+    private double UserMaxHeartRate = 70;//(int)206.9 - (0.67 * 74);
+    private int UserMinHeartRate = 50;
     private TimestampTranslation tsTranslation;
 
     private class Steps {
@@ -188,16 +194,58 @@ public class LiveActivityFragment extends AbstractChartFragment {
         int timestamp = (int) (tsMillis / 1000); // translate to seconds
         return tsTranslation.shorten(timestamp); // and shorten
     }
+/*
+    private void SendSMS(String phonenumber, String message) {
 
+        SmsManager smsManager = SmsManager.getDefault();
+        String sendTo = phonenumber;
+        String myMessage = message;
+        smsManager.sendTextMessage(sendTo, null, myMessage, null, null);
+        Toast.makeText(SMSSender.this, "전송되었습니다.", Toast.LENGTH_SHORT).show();
+        finish();
+    }
+
+    SendSMS("01037578540","ㅋㅋㅋㅋ");
+    */
+    /*여기가 심박수 */
+    /*
+       1.독거노인의 평균연령 찾기
+
+       2. 독거노인 평균연령대 최대심박수 찾기
+       Jackson et al 최대 심박수 측정 공식
+       HRmax = 206.9 - (0.67 x 나이[74] = 157.32)
+       HRmin = 40
+       3. 생년월일 default값을 평균연령으로 설정
+       4. if문사용 최대 심박수 넘겼을 경우 토스트 출력(임시 나중에는 문자 발송)
+       ---------------------------
+       심박수 측정 불가 상태일 경우
+       1. 진동 or 핸드폰으로 알려야 함
+       2. ??..??...??????????????!!?
+     */
     private void setCurrentHeartRate(int heartRate, int timestamp) {
         addHistoryDataSet(true);
         mHeartRate = heartRate;
         if (mMaxHeartRate < mHeartRate) {
             mMaxHeartRate = mHeartRate;
         }
+        if (mMaxHeartRate > UserMaxHeartRate)
+        {
+            Toast.makeText(getContext(), "(경고) 최대심박수 초과!", Toast.LENGTH_LONG).show();
+            WarningCount += 1;
+        }
+        if (WarningCount > 5 && UserMinHeartRate > mHeartRate) //count가 5이상이고 최소심박수(50)가 현재 심박수보다 높을 때
+        {
+            String messageText = "(경고!) 피보호자의 심박수가 이상 증세를 보이고 있습니다. 상태를 확인해주세요";
+            SmsManager sm = SmsManager.getDefault();
+            sm.sendTextMessage("01037578540", null, messageText, null, null);
+            sm.sendTextMessage("01040360567", null, messageText, null, null);
+            WarningCount = 0;
+        }
+
         mMaxHeartRateView.setText(getContext().getString(R.string.live_activity_max_heart_rate, heartRate, mMaxHeartRate));
     }
 
+    /* 심박수 측정 불가능 할 때 -1로 저장*/
     private int getCurrentHeartRate() {
         int result = mHeartRate;
         mHeartRate = -1;

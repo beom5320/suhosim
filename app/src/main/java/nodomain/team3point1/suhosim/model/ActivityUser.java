@@ -35,14 +35,6 @@ public class ActivityUser {
     public static final int GENDER_OTHER = 2;
 
     public static final int BLOOD_TYPE_OTHER = 0;
-    public static final int BLOOD_TYPE_RH_PLUS_A = 1;
-    public static final int BLOOD_TYPE_RH_PLUS_B = 2;
-    public static final int BLOOD_TYPE_RH_PLUS_O = 3;
-    public static final int BLOOD_TYPE_RH_PLUS_AB = 4;
-    public static final int BLOOD_TYPE_RH_MINUS_A = 5;
-    public static final int BLOOD_TYPE_RH_MINUS_B= 6;
-    public static final int BLOOD_TYPE_RH_MINUS_O= 7;
-    public static final int BLOOD_TYPE_RH_MINUS_AB= 8;
 
     private String activityUserName;
     private String activityUserName2;
@@ -60,7 +52,7 @@ public class ActivityUser {
     private static final String defaultUserName = "suhosim-user";
     public static final String defaultUserName2 = "?";
     public static final int defaultUserGender = GENDER_FEMALE;
-    public static final int defaultUserBloodType = BLOOD_TYPE_OTHER; //ㄱㄱ
+    public static final int defaultUserBloodType = BLOOD_TYPE_OTHER;
     public static final int defaultUserYearOfBirth = 0;
     public static final int defaultUserAge = 0;
     public static final int defaultUserHeightCm = 175;
