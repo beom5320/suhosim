@@ -5,6 +5,7 @@
         android:drawable="@color/primarytext_dark"/>
 
     <item
+        android:top="70dp"
         android:gravity="center"
         android:drawable="@drawable/gadgetbridge_img"/>
 
