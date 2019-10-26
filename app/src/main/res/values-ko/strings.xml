@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">수호심</string>
     <string name="title_activity_controlcenter">수호심</string>
+    <string name="main_menu">메뉴</string>
     <string name="action_settings">설정</string>
     <string name="action_debug">디버그</string>
     <string name="action_quit">종료</string>

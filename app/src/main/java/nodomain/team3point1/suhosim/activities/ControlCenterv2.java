@@ -56,6 +56,8 @@ import java.util.Objects;
 import de.cketti.library.changelog.ChangeLog;
 import nodomain.team3point1.suhosim.GBApplication;
 import nodomain.team3point1.suhosim.R;
+import nodomain.team3point1.suhosim.activities.charts.AbstractChartFragment;
+import nodomain.team3point1.suhosim.activities.charts.LiveActivityFragment;
 import nodomain.team3point1.suhosim.adapter.GBDeviceAdapterv2;
 import nodomain.team3point1.suhosim.devices.DeviceManager;
 import nodomain.team3point1.suhosim.impl.GBDevice;
@@ -373,4 +375,7 @@ public class ControlCenterv2 extends AppCompatActivity
         }
         AndroidUtils.setLanguage(this, language);
     }
+
+
 }
+
