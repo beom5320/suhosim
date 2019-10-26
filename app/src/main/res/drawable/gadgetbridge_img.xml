@@ -3,7 +3,7 @@
     android:width="233dp"
     android:height="341dp"
     android:viewportWidth="110"
-    android:viewportHeight="150">
+    android:viewportHeight="160">
     <!--
     <path
         android:strokeColor="#edededed"
