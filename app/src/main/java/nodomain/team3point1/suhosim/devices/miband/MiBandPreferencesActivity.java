@@ -57,7 +57,6 @@ public class MiBandPreferencesActivity extends AbstractSettingsActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         addPreferencesFromResource(R.xml.miband_preferences);
 
         addTryListeners();
@@ -209,6 +208,7 @@ public class MiBandPreferencesActivity extends AbstractSettingsActivity {
                 return true;
             }
         });
+        finish(); // ^@^ 미밴드 페어링 할때 상세 설정이 뜨는데, 이걸 종료 시켜버리는 코드
     }
 
     /**
