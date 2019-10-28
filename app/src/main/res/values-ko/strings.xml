@@ -188,7 +188,7 @@
     <string name="live_activity_current_steps_per_minute">현재의 분당 걸음 수</string>
     <string name="live_activity_total_steps">전체 걸음 수</string>
     <string name="live_activity_steps_per_minute_history">분당 걸음 수 기록</string>
-    <string name="live_activity_start_your_activity">활동 시작</string>
+    <string name="live_activity_start_your_activity">센서 데이터를 읽는 중</string>
     <string name="abstract_chart_fragment_kind_activity">활동</string>
     <string name="abstract_chart_fragment_kind_light_sleep">얕은 수면</string>
     <string name="abstract_chart_fragment_kind_deep_sleep">깊은 수면</string>
