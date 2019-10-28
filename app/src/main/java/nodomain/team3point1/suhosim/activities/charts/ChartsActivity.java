@@ -325,6 +325,8 @@ public class ChartsActivity extends AbstractGBFragmentActivity implements Charts
             // getItem is called to instantiate the fragment for the given page.
             switch (position) {
                 case 0:
+                    return new LiveActivityFragment();
+                /* ^@^ case 0:
                     return new ActivitySleepChartFragment();
                 case 1:
                     return new SleepChartFragment();
@@ -335,7 +337,7 @@ public class ChartsActivity extends AbstractGBFragmentActivity implements Charts
                 case 4:
                     return new SpeedZonesFragment();
                 case 5:
-                    return new LiveActivityFragment();
+                    return new LiveActivityFragment(); */
             }
             return null;
         }
@@ -345,7 +347,8 @@ public class ChartsActivity extends AbstractGBFragmentActivity implements Charts
             // Show 5 or 6 total pages.
             DeviceCoordinator coordinator = DeviceHelper.getInstance().getCoordinator(mGBDevice);
             if (coordinator.supportsRealtimeData()) {
-                return 6;
+                // ^@^ return 6;
+                return 1;
             }
             return 5;
         }
@@ -372,6 +375,8 @@ public class ChartsActivity extends AbstractGBFragmentActivity implements Charts
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
+                    return getString(R.string.liveactivity_live_activity);
+                /* ^@^ case 0:
                     return getString(R.string.activity_sleepchart_activity_and_sleep);
                 case 1:
                     return getString(R.string.sleepchart_your_sleep);
@@ -382,7 +387,7 @@ public class ChartsActivity extends AbstractGBFragmentActivity implements Charts
                 case 4:
                     return getString(R.string.stats_title);
                 case 5:
-                    return getString(R.string.liveactivity_live_activity);
+                    return getString(R.string.liveactivity_live_activity); */
             }
             return super.getPageTitle(position);
         }
